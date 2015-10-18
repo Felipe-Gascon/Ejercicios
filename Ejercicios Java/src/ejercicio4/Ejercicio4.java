@@ -3,6 +3,7 @@ package ejercicio4;
 import java.util.Scanner;
 
 public class Ejercicio4 {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		//Pedir dos números y decir si son iguales o no.
 		
