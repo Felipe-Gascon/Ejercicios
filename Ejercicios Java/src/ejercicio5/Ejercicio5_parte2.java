@@ -9,12 +9,12 @@ public class Ejercicio5_parte2 {
 		// num guarda los números introducidos
 		Scanner sc;
 		sc = new Scanner(System.in);
-		
+
 		n=(int)(Math.random()*100)+1;
 		// en lugar de pedir n... podemos hacer que se n tome un valor
 		// aleatorio entre 1 y 100.
 		// Así el juego es algo más entretenido.
-		
+
 		System.out.println("Introduce un número: ");
 		num = sc.nextInt();
 		while(num !=n)
