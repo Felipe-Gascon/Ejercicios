@@ -9,7 +9,7 @@ public class Ejercicio16 {
 		Scanner sc = new Scanner(System.in);
 		int t[]=new int [10];
 		int n;
-		
+		int ultimo;
 
 		//leemos la tabla
 		for (int i=0;i<10;i++)
@@ -23,7 +23,6 @@ public class Ejercicio16 {
 
 		System.out.println("Posciciones a desplazar: ");
 		n = sc.nextInt();
-
 		// en el caso de desplazar una posición: necesitamos guardar solo un elemento (el último que
 		// pasa a ser el primero)
 		// en el caso de desplazar dos posiciones: necesitamos guardar dos elementos (penúltimo y
@@ -34,11 +33,13 @@ public class Ejercicio16 {
 		int copia[]=t.clone();
 		// desplazamos hacia abajo n posiciones
 		
-		for(int i=0;i<10;i++)
+		for(int i=0;i<t.length-n-1;i++)
 		{
 			t[i]=copia[(i+n)];
-			// la tabla funciona como si fuese circular por eso utilizamos el módulo
+			
 		}
+		t[0]=copia[copia.length-n-1];
+		
 		
 		System.out.println("\n\n La tabla queda: ");
 		
