@@ -1,5 +1,9 @@
 package ejercicio24;
 
+/**
+ * @author Felipe
+ *
+ */
 import java.util.Scanner;
 
 public class Ejercicio24 {
